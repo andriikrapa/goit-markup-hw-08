@@ -1,0 +1,57 @@
+/* About us */
+
+.about-us.section {
+  padding-top: 94px;
+  padding-bottom: 47px;
+
+  h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+
+  p {
+    line-height: 1.71;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+.about-us-items {
+  display: flex;
+  margin: -15px;
+
+  li {
+    width: 270px;
+    margin: 15px;
+  }
+}
+
+/* .about-us-items li:before{
+    display: block;
+    width: 270px;
+    height: 120px;
+    background-color: $second-bg-color;
+    background-image: url("../images/about-us/antenna.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 4px;
+    content: "";
+    margin-bottom: 30px;
+} */
+
+.about-us-items-bg {
+  background-color: $second-bg-color;
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.about-us-items svg {
+  width: 70px;
+  height: 70px;
+  fill: $title-text-color;
+}

@@ -1,0 +1,63 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+*:focus {
+  outline-color: $accent-color;
+}
+
+body {
+  background-color: $primary-bg-color;
+  color: $primary-text-color;
+  font-family: "Raleway", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+
+  /* header fixed */
+  /* padding-top: 79px; */
+}
+
+.link {
+  text-decoration: none;
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+h2 {
+  color: $title-text-color;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 1.19;
+}
+
+h3 {
+  color: $title-text-color;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 1.14;
+}
+
+img {
+  display: block; /* с помощью задания картинке свойства блочного элемента, убираем дополнительный отступ у картинок (не маржин, не падинг) */
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
