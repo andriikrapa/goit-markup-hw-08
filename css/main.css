@@ -655,18 +655,18 @@ img {
   padding-bottom: 95px;
 }
 
-.our-clients.section h2 {
+.our-clients h2 {
   margin-top: 0;
   margin-bottom: 50px;
   text-align: center;
 }
 
-.our-clients.section ul {
+.our-clients ul {
   display: flex;
   margin: -15px;
 }
 
-.our-clients.section a {
+.our-clients a {
   display: block;
   display: flex;
   align-items: center;
@@ -680,8 +680,8 @@ img {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.our-clients.section a:hover,
-.our-clients.section a:focus {
+.our-clients a:hover,
+.our-clients a:focus {
   border-color: #2196F3;
   fill: #2196F3;
 }
