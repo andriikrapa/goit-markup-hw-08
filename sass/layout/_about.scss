@@ -1,57 +1,90 @@
 /* About us */
 
-.about-us.section {
-  padding-top: 94px;
-  padding-bottom: 47px;
+.about-us-section {
+  padding-top: 60px;
+  padding-bottom: 60px;
 
   h3 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.142;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
     margin-top: 0;
     margin-bottom: 10px;
   }
 
   p {
-    line-height: 1.71;
+    font-size: 14px;
+    line-height: 1.714;
+    letter-spacing: 0.03em;
     margin-top: 0;
     margin-bottom: 0;
   }
 }
 
 .about-us-items {
-  display: flex;
-  margin: -15px;
-
-  li {
-    width: 270px;
-    margin: 15px;
+  svg {
+    width: 70px;
+    height: 70px;
+    fill: $title-text-color;
   }
 }
 
-/* .about-us-items li:before{
-    display: block;
-    width: 270px;
-    height: 120px;
-    background-color: $second-bg-color;
-    background-image: url("../images/about-us/antenna.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 4px;
-    content: "";
-    margin-bottom: 30px;
-} */
-
 .about-us-items-bg {
   background-color: $second-bg-color;
-  width: 270px;
+  width: 100%;
   height: 120px;
   border-radius: 4px;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 30px;
+} 
+
+@media screen and (max-width: 767px) {
+  .about-us-section {
+    h3 {
+      text-align: center;
+    }
+  }
+  .about-us-items {
+    li:not(:last-child){
+      margin-bottom: 30px;
+    }
+  }
 }
 
-.about-us-items svg {
-  width: 70px;
-  height: 70px;
-  fill: $title-text-color;
+@media screen and (min-width: 768px) {
+  .about-us-items {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+
+    li {
+      width: calc((100% - 15px*4) / 2 );
+      margin: 15px;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .about-us-section {
+    padding-top: 94px;
+    padding-bottom: 47px;
+  }
+
+  .about-us-items {
+    display: flex;
+    margin: -15px;
+
+    li {
+      width: 270px;
+      margin: 15px;
+    }
+  }
+
+  .about-us-items-bg {
+    width: 270px;
+  }
 }
