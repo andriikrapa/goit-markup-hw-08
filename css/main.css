@@ -707,39 +707,49 @@ img {
   }
 }
 
-/* Section What we do */
-.what-we-do.section {
-  padding-top: 47px;
-  padding-bottom: 94px;
+@media screen and (max-width: 767px) {
+  .what-we-do-section {
+    display: none;
+  }
 }
 
-.what-we-do.section h2 {
-  margin-top: 0;
-  margin-bottom: 50px;
-  text-align: center;
+@media screen and (min-width: 768px) {
+  .what-we-do-section {
+    display: none;
+  }
 }
 
-.what-we-do.section h3 {
-  position: absolute;
-  bottom: 0px;
-  width: 100%;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-top: 27px;
-  padding-bottom: 27px;
-  color: #ffffff;
-  background-color: rgba(47, 48, 58, 0.8);
-  text-align: center;
-}
-
-.what-we-do-items {
-  display: flex;
-  margin: -15px;
-}
-
-.what-we-do-items li {
-  position: relative;
-  margin: 15px;
+@media screen and (min-width: 1200px) {
+  .what-we-do-section {
+    display: block;
+    padding-top: 47px;
+    padding-bottom: 94px;
+  }
+  .what-we-do-section h2 {
+    margin-top: 0;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  .what-we-do-section h3 {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    color: #ffffff;
+    background-color: rgba(47, 48, 58, 0.8);
+    text-align: center;
+  }
+  .what-we-do-items {
+    display: flex;
+    margin: -15px;
+  }
+  .what-we-do-items li {
+    position: relative;
+    margin: 15px;
+  }
 }
 
 /* Section Our team */
