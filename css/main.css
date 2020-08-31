@@ -752,48 +752,57 @@ img {
   }
 }
 
-/* Section Our team */
-.our-team.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+.our-team-section {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background: #F5F4FA;
 }
 
-.our-team.section h2 {
-  margin-top: 0;
-  margin-bottom: 50px;
+.our-team-section h2 {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.178;
   text-align: center;
-}
-
-.our-team.section img {
+  letter-spacing: 0.03em;
+  margin-top: 0;
   margin-bottom: 30px;
 }
 
-.our-team.section h3 {
+.our-team-section img {
+  margin-bottom: 30px;
+}
+
+.our-team-section h3 {
   text-transform: capitalize;
   margin-top: 0;
   margin-bottom: 10px;
   font-size: 16px;
-  line-height: 1.19;
+  line-height: 1.187;
 }
 
-.our-team.section p {
+.our-team-section p {
   margin-top: 0;
   margin-bottom: 16px;
 }
 
-.our-team-items {
-  display: flex;
-  margin: -15px;
+.our-team-items > ul {
+  max-width: 480px;
 }
 
 .our-team-items > li {
-  margin: 15px;
+  max-width: 450px;
   padding-bottom: 24px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
   background-color: #ffffff;
   text-align: center;
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
   border-radius: 0px 0px 4px 4px;
+}
+
+.our-team-items img {
+  width: 100%;
 }
 
 /* .our-team-items li:not(:last-child){
@@ -804,6 +813,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .our-team-social-list li {
@@ -834,41 +844,143 @@ img {
   height: 20px;
 }
 
-/* Section Our Clients */
-.our-clients.section {
-  padding-top: 94px;
-  padding-bottom: 95px;
+@media screen and (min-width: 768px) {
+  .our-team-items {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+  .our-team-items > li {
+    max-width: calc((100% - 15px*4)/2);
+    margin: 15px;
+    padding-bottom: 24px;
+  }
 }
 
-.our-clients.section h2 {
-  margin-top: 0;
-  margin-bottom: 50px;
+@media screen and (min-width: 1200px) {
+  .our-team-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    background: #F5F4FA;
+  }
+  .our-team-section h2 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.166;
+    margin-top: 0;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  .our-team-section h3 {
+    text-transform: capitalize;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 1.19;
+  }
+  .our-team-section p {
+    margin-top: 0;
+    margin-bottom: 16px;
+  }
+  .our-team-items {
+    display: flex;
+    margin: -15px;
+  }
+  .our-team-items > li {
+    width: 270px;
+    margin: 15px;
+    padding-bottom: 24px;
+  }
+}
+
+.our-clients-container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.our-clients-container h2 {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.178;
   text-align: center;
+  letter-spacing: 0.03em;
+  margin-top: 0;
+  margin-bottom: 30px;
 }
 
-.our-clients.section ul {
+.our-clients-container ul {
   display: flex;
   margin: -15px;
 }
 
-.our-clients.section a {
-  display: block;
+.our-clients-container a {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 170px;
+  width: 210px;
   height: 90px;
   border: 1px solid #AFB1B8;
   border-radius: 4px;
-  margin: 15px;
   fill: #AFB1B8;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.our-clients.section a:hover,
-.our-clients.section a:focus {
+.our-clients-container a:hover,
+.our-clients-container a:focus {
   border-color: #2196F3;
   fill: #2196F3;
+}
+
+@media screen and (max-width: 767px) {
+  .our-clients-container {
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .our-clients-container ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: -15px;
+  }
+  .our-clients-container li {
+    margin: 15px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .our-clients-container {
+    width: 768px;
+  }
+  .our-clients-container ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: -15px;
+  }
+  .our-clients-container li {
+    margin: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .our-clients-container {
+    padding-top: 94px;
+    padding-bottom: 95px;
+  }
+  .our-clients-container h2 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.167;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-top: 0;
+    margin-bottom: 50px;
+  }
+  .our-clients-container a {
+    width: 170px;
+    height: 90px;
+  }
 }
 
 /* Footer */

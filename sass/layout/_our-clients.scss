@@ -1,13 +1,16 @@
-/* Section Our Clients */
-
-.our-clients.section {
-  padding-top: 94px;
-  padding-bottom: 95px;
+.our-clients-container {
+  padding-top: 60px;
+  padding-bottom: 60px;
 
   h2 {
-    margin-top: 0;
-    margin-bottom: 50px;
+
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.178;
     text-align: center;
+    letter-spacing: 0.03em;
+    margin-top: 0;
+    margin-bottom: 30px;
   }
 
   ul {
@@ -16,19 +19,14 @@
   }
 
   a {
-    display: block;
     display: flex;
     align-items: center;
     justify-content: center;
-
-    width: 170px;
+    width: 210px;
     height: 90px;
     border: 1px solid $svg-bg-color;
     border-radius: 4px;
-    margin: 15px;
-
     fill: $svg-bg-color;
-
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
@@ -36,5 +34,67 @@
   a:focus {
     border-color: $accent-color;
     fill: $accent-color;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .our-clients-container {
+    
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+  
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      margin: -15px;
+    }
+
+    li {
+      
+      margin: 15px;
+    }
+  }  
+}
+
+@media screen and (min-width: 768px) {
+  .our-clients-container {
+    width: 768px;
+
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      margin: -15px;
+    }
+
+    li {
+      
+      margin: 15px;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .our-clients-container {
+    padding-top: 94px;
+    padding-bottom: 95px;
+
+    h2 {
+
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 1.167;
+      text-align: center;
+      letter-spacing: 0.03em;
+      margin-top: 0;
+      margin-bottom: 50px;
+    }
+
+    a {
+      width: 170px;
+      height: 90px;
+    }
   }
 }
